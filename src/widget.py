@@ -16,8 +16,8 @@ print(mask_account_card("MasterCard 7158300734726758"))
 
 def get_data(date: str) -> str:
     """Функция для преобразования даты"""
-    new_date = (f'{date[8:10]}.{date[5:7]}.{date[:4]}')
+    new_date = f"{date[8:10]}.{date[5:7]}.{date[:4]}"
     return new_date
 
 
-print(get_data('2018-07-11T02:26:18.671407'))
+print(get_data("2018-07-11T02:26:18.671407"))
