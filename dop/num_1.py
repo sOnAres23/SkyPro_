@@ -1,4 +1,6 @@
 def strings(words: list) -> list:
+    """Функция, которая принимает на вход список со словами
+    и возвращает список слов, в которых первая и последняя буквы совпадают"""
     new_list = []
     if words:
         for word in words:
@@ -7,4 +9,7 @@ def strings(words: list) -> list:
     return new_list
 
 
-print(strings(['', 'madam', 'racecar', 'noon', 'level', '']))
+if __name__ == "__main__":
+    print(strings(['hello', 'dear', 'Vladislav', 'you', 'are', 'talent']))
+    print(strings(['', 'madam', 'racecar', 'noon', 'level', '']))
+    print(strings([]))

@@ -22,4 +22,5 @@ def find_directory(path: str = os.getcwd(), recursive_counting: str | int = None
     return directory_count
 
 
-print(find_directory())
+if __name__ == "__main__":
+    print(find_directory())

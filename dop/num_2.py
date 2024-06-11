@@ -1,4 +1,6 @@
 def numbers(nums: list) -> int:
+    """Функция, которая принимает на вход список целых чисел
+    и возвращает максимальное произведение двух чисел из списка"""
     max_nums = []
     if len(nums) < 2:
         return 0
@@ -23,7 +25,8 @@ def numbers(nums: list) -> int:
     return max_nums[0] * max_nums[1]
 
 
-print(numbers([2, 3, 5, 7, 11]))
-print(numbers([-5, -10, -9, -12]))
-print(numbers([2, 4]))
-print(numbers([23]))
+if __name__ == "__main__":
+    print(numbers([2, 3, 5, 7, 11]))
+    print(numbers([-5, -10, -9, -12]))
+    print(numbers([2, 4]))
+    print(numbers([23]))
